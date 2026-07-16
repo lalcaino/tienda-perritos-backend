@@ -12,6 +12,11 @@ jobs:
     steps:
       - name: Checkout código
         uses: actions/checkout@v3
+      
+      - name: Instalar dependencias y ejecutar tests
+        run: |
+          npm install
+          npm test --if-present
 
       - name: Configurar credenciales AWS
         uses: aws-actions/configure-aws-credentials@v2

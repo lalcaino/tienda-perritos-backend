@@ -4,11 +4,15 @@
   "description": "API backend para tienda de alimentos para perritos",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "test": "mocha test/ --timeout 5000"
   },
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.19.0",
     "mysql2": "^3.9.0"
+  },
+  "devDependencies": {
+    "mocha": "^11.7.6"
   }
 }
